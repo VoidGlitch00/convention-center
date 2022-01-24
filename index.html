@@ -15,6 +15,16 @@
   .effect:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
+    @media only screen and (max-width: 768px){
+      .asked-q{
+        display:flex;
+        flex-direction:column;
+      }
+      .footer-mbl{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
   </style>
 </head>
 <body>
@@ -103,41 +113,47 @@
         </button>
       </div>
     </section>
-                                <!-- bonus section -->
-    <section class="container mt-5 d-flex">
-      <div class="pe-5">
-        <img src="images/people.png" alt="">
+    <!-- toast -->
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex align-items-center">
+          <div class="pe-2">
+            <svg width="22px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+            </svg>
+          </div>
+          <div>20% off on next booking</div>
+       </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
-      <div class="d-flex align-items-center">
-        <div>
-          <h2> <strong>Every moment is Precious</strong> </h2> <br>
-          <p>This would be your lifetime achievement thing. So just pick your experience wisely. We will provide you the best photo session experience you could ever had.</p>
-          <button type="button" class="btn btn-outline-info">Explore our album 
-            <div style="width: 18px; height: 18px;" class="spinner-grow" role="status">
-              <span class="visually-hidden">Loading...</span>
+    </div>
+                                <!-- toast ends here -->
+                                <!-- bonus section -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 col-xs-12">
+            <div class="pe-5">
+              <img src="images/wedding.png" class="w-100" alt="">
             </div>
-          </button>
+          </div>
+          <div class="col-xl-7 col-xs-12 d-flex align-items-center justify-content-center">
+            <div>
+              <div>
+                <h2> <strong>Every moment is Precious</strong> </h2> <br>
+                <p>This would be your lifetime achievement thing. So just pick your experience wisely. We will provide you the best photo session experience you could ever had.</p>
+                <button type="button" class="btn btn-outline-info">Explore our album 
+                  <div style="width: 18px; height: 18px;" class="spinner-grow" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </button>
+              </div>
+          </div>
         </div>
       </div>
-
     </section>
                                 <!-- card section -->
     <section class="container" id="about">
-      <!-- toast -->
-      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="d-flex">
-          <div class="toast-body d-flex align-items-center">
-            <div class="pe-2">
-              <svg width="22px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-              </svg>
-            </div>
-            <div>20% off on next booking</div>
-         </div>
-          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-      </div>
-                              <!-- toast ends here -->
       <h1 align="center" class="m-5">Our Package</h1>
                               <!-- Packages starts -->
       <div>
@@ -324,7 +340,7 @@
                                 <!-- Asked Questions -->
     <section class="container">
       <h1 align="center" class="m-5">Frequently Asked Questions</h1>
-      <div class="d-flex">
+      <div class="d-flex asked-q">
         <div>
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -383,7 +399,7 @@
       </div>
     </section>
         <!-- happy client says -->
-        <section class="container m-5" id="contact">
+        <section class="container me-5" id="contact">
           <h2 align="center" class="p-5">Happy Client Says</h2>     
             <div class="row">
               <div class="col-xl-4 col-sm-1 my-4 effect">
@@ -439,9 +455,9 @@
   </main>
                                 <!-- footer starts -->
   <footer class="bg-dark text-white p-5" id="subscribe">
-    <div class="d-flex justify-content-between">
-      <div class="d-flex align-items-center">
-        <p>© 2022 Quantum. All rights reserved</p>
+    <div class="d-flex justify-content-between footer-mbl">
+      <div class="d-flex align-items-center justify-content-center">
+        <p class="mt-5">© 2022 Quantum. All rights reserved</p>
       </div>
       <div class="me-5">
         <h4 class="p-2 text-secondary">Get the App</h4>
@@ -464,9 +480,7 @@
             <h4 class="m-0">Google Play</h4>
           </div>
         </button></a>
-
       </div>
-
     </div>
     
 
