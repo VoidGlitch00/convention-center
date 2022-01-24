@@ -7,38 +7,39 @@
   <title>Quantum Convention Hall</title>
   <!-- bootstrap link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+
+  </style>
 </head>
 <body>
   <header>
                                    <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light p-4 fs-5 fixed-top bg-light">
-      <div class="container">
-        <div>
-          <a class="navbar-brand fs-4 fw-bold" href="#">Quantum Convention Center</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
-        <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarSupportedContent">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-4 fs-5">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">Quantum Convention Hall</a>
           <div>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">About Us</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Contact</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Subscribe</a>
-              </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Subscribe</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
   </header>
                                    <!-- main body starts here -->
   <main>
@@ -53,8 +54,8 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/banner.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block mb-4">
+            <img height="616" src="images/banner.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block mb-4">
               <h5 style="font-size:48px">The perfect venue for your<br>next event</h5>
               <p>There are no other venue around you who can provide you this much care, support and space which we are providing you.</p>
               <button type="button" class="btn btn-light px-5 text-danger">Book Now</button>
@@ -62,7 +63,7 @@
           </div>
           <div class="carousel-item">
             <img height="616" src="images/wedding-hall.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block mb-4">
+            <div class="carousel-caption d-md-block mb-4">
               <h5 style="font-size:48px">Best Recieption Hall</h5>
               <p>Seeing the representation of recieption hall you will fall in love.</p>
               <button type="button" class="btn btn-light px-5 text-danger">Book Now</button>
@@ -70,7 +71,7 @@
           </div>
           <div class="carousel-item">
             <img height="616" src="images/flower.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block mb-4">
+            <div class="carousel-caption d-md-block mb-4">
               <h5 style="font-size:48px">Nice Decoration</h5>
               <p>The decoration is top notch. You must have to like it.</p>
               <button type="button" class="btn btn-light px-5 text-danger">Book Now</button>
@@ -78,7 +79,7 @@
           </div>
           <div class="carousel-item">
             <img height="616" src="images/piano.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block mb-4">
+            <div class="carousel-caption d-md-block mb-4">
               <h5 style="font-size:48px">Perfection of Interior</h5>
               <p>What else could be more perfect and beautiful if it is interior and a piano is there for you.</p>
               <button type="button" class="btn btn-light px-5 text-danger">Book Now</button>
@@ -115,11 +116,12 @@
           <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
       </div>
-      <!-- toast ends here -->
+                              <!-- toast ends here -->
       <h1 align="center" class="m-5">Our Package</h1>
+                              <!-- Packages starts -->
       <div>
         <div class="row align-items-center" style="height: 520px">
-          <div class="col-sm-3">
+          <div class="col-sm-3 pb-0">
             <div class="card border-0">
               <div class="card-body">
                 <h1 class="card-title fw-bold pb-3">$300</h1>
