@@ -18,7 +18,10 @@
     @media only screen and (max-width: 768px){
       .asked-q{
         display:flex;
-        flex-direction:column;
+        flex-direction:column-reverse;
+      }
+      .asked img{
+        padding-left: 0px;
       }
       .footer-mbl{
         display: flex;
@@ -157,7 +160,7 @@
       <h1 align="center" class="m-5">Our Package</h1>
                               <!-- Packages starts -->
       <div>
-        <div class="row align-items-end"  style="height: 550px">
+        <div class="row align-items-end">
           <!-- 1st card -->
           <div class="col-sm-3">
             <div class="card border-0">
@@ -394,7 +397,7 @@
           </div>
         </div>
         <div class="p-5">
-          <img src="images/people.png" alt="">
+          <img class="img-fluid" style="width: 1000px;" src="images/people.png" alt="">
         </div>
       </div>
     </section>
