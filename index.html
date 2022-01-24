@@ -34,13 +34,13 @@
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link" href="#about">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Subscribe</a>
+                  <a class="nav-link" href="#subscribe">Subscribe</a>
                 </li>
               </ul>
             </div>
@@ -122,7 +122,7 @@
 
     </section>
                                 <!-- card section -->
-    <section class="container">
+    <section class="container" id="about">
       <!-- toast -->
       <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="d-flex">
@@ -383,7 +383,7 @@
       </div>
     </section>
         <!-- happy client says -->
-        <section class="container m-5">
+        <section class="container m-5" id="contact">
           <h2 align="center" class="p-5">Happy Client Says</h2>     
             <div class="row">
               <div class="col-xl-4 col-sm-1 my-4 effect">
@@ -417,24 +417,28 @@
                 </div>
               </div>
             </div>
+            
+        </section>
+        <!-- contact section -->
+        <section style="background-color: rgb(227, 245, 250);" class="pb-1">
+          <div class="mb-3 container">
             <div>
               <h3 align="center" class="pt-5">For further information please contact us.</h3>
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Email address</label>
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Let us know your preferences!</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              <div align="center">
-                <button type="button" class="btn btn-outline-success m-3">Submit</button>
-              </div>
             </div>
+            <label for="exampleFormControlTextarea1" class="form-label">Let us know your preferences!</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div align="center">
+              <button type="button" class="btn btn-outline-success m-3">Submit</button>
             </div>
+          </div>
         </section>
   </main>
                                 <!-- footer starts -->
-  <footer class="bg-dark text-white p-5">
+  <footer class="bg-dark text-white p-5" id="subscribe">
     <div class="d-flex justify-content-between">
       <div class="d-flex align-items-center">
         <p>© 2022 Quantum. All rights reserved</p>
